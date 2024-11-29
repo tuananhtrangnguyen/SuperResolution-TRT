@@ -8,11 +8,10 @@
    git clone SuperResolution-TRT
    cd SuperResolution-TRT
 2. **Install Dependencies**  
-   - CUDA 11.8  
+   - CUDA 10.2  
    - TensorRT  
    - OpenCV 4.x  
-   - CMake 3.16 or higher  
-   - A C++17-compatible compiler  
+   - CMake 3.10  
 
 3. **Modify `CMakeLists.txt`**  
    - Update the following paths in `CMakeLists.txt` if necessary:  
@@ -42,7 +41,7 @@
 6. **Example Command**
 
    ```
-   ./sr VID.mp4 output/sr.mp4 sr.trt
+   ./sr /home/gremsy/Desktop/SuperResolution-TRT/VID_IR_0.mp4 /home/gremsy/Desktop/SuperResolution-TRT/output/output.mp4 /home/gremsy/Desktop/onnx/engine/vgg_fp32.trt
     ```
    
 ## Project Structure
